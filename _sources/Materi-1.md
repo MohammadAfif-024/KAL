@@ -13,4 +13,4 @@ Bentuk umum persamaan linear dua variabel adalah:
 ```{math}
 ax + by = c
 
-![original image](https://cdn.mathpix.com/snip/images/wvJDBpXt51UTyQZD-LgAe87HU6H0t5ZyyTq2NwAImgo.original.fullsize.png)
+![KAL pertemuan 1](images/KAL pertemuan 1.png)
