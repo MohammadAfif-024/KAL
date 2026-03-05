@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Materi Pertemuan 4 &#8212; Catatan KAL Saya</title>
+    <title>Tugas ELiminasi Gaussan &#8212; Catatan KAL Saya</title>
   
   
   
@@ -57,11 +57,9 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'Materi-4';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'TugasEliminasiGussan';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Tugas Awal" href="TugasAwal.html" />
-    <link rel="prev" title="Materi Pertemuan 3" href="Materi-3.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -124,6 +122,8 @@
       
       
       
+        
+      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -179,11 +179,11 @@
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
+        <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Materi-1.html">Materi Pertemuan 1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Materi-2.html">Materi pertemuan 2</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Materi-3.html">Materi Pertemuan 3</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Materi Pertemuan 4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Materi-4.html">Materi Pertemuan 4</a></li>
 <li class="toctree-l1"><a class="reference internal" href="TugasAwal.html">Tugas Awal</a></li>
 </ul>
 
@@ -256,7 +256,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FMateri-4.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FTugasEliminasiGussan.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -286,7 +286,7 @@
       
       
       
-      <li><a href="_sources/Materi-4.md" target="_blank"
+      <li><a href="_sources/TugasEliminasiGussan.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -368,7 +368,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Materi Pertemuan 4</h1>
+    <h1>Tugas ELiminasi Gaussan</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -382,8 +382,124 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="materi-pertemuan-4">
-<h1>Materi Pertemuan 4<a class="headerlink" href="#materi-pertemuan-4" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="tugas-eliminasi-gaussan">
+<h1>Tugas ELiminasi Gaussan<a class="headerlink" href="#tugas-eliminasi-gaussan" title="Link to this heading">#</a></h1>
+<p>\section*{1. SPL (Sistem Persamaan Linear)}</p>
+<p>[
+\begin{cases}
+1x_1 + 0x_2 + 0x_3 + 0x_4 + 0x_5 = 1 \
+2x_1 + 1x_2 + 0x_3 + 0x_4 + 0x_5 = 4 \
+0x_1 + 3x_2 + 1x_3 + 0x_4 + 0x_5 = 9 \
+0x_1 + 0x_2 + 4x_3 + 1x_4 + 0x_5 = 16 \
+0x_1 + 0x_2 + 0x_3 + 5x_4 + 1x_5 = 25
+\end{cases}
+]</p>
+<p>\section*{2. Matriks Augmented}</p>
+<p>[
+\left[
+\begin{array}{ccccc|c}
+1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \
+2 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 4 \
+1 &amp; 3 &amp; 1 &amp; 0 &amp; 0 &amp; 9 \
+1 &amp; 0 &amp; 4 &amp; 1 &amp; 0 &amp; 16 \
+1 &amp; 0 &amp; 0 &amp; 5 &amp; 1 &amp; 25
+\end{array}
+\right]
+]</p>
+<p>\section*{3. Eliminasi Gauss (OBE)}</p>
+<p>\subsection*{Langkah 1: nolkan elemen di bawah pivot kolom 1}</p>
+<p>Operasi baris:
+[
+R_2 \leftarrow R_2 - 2R_1
+]</p>
+<p>Penjelasan:
+\begin{enumerate}
+\item Pivot pertama ada di kolom 1 baris 1 (angka 1).
+\item Di bawahnya (baris 2 kolom 1) ada angka 2.
+\item Kita ingin membuat elemen tersebut menjadi 0.
+\item Caranya dengan mengurangkan 2 kali baris 1 dari baris 2.
+\end{enumerate}</p>
+<p>[
+\left[
+\begin{array}{ccccc|c}
+1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \
+0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 2 \
+1 &amp; 3 &amp; 1 &amp; 0 &amp; 0 &amp; 9 \
+1 &amp; 0 &amp; 4 &amp; 1 &amp; 0 &amp; 16 \
+1 &amp; 0 &amp; 0 &amp; 5 &amp; 1 &amp; 25
+\end{array}
+\right]
+]</p>
+<p>\subsection*{Langkah 2: nolkan elemen di bawah pivot kolom 2}</p>
+<p>Operasi baris:
+[
+R_3 \leftarrow R_3 - 3R_2
+]</p>
+<p>Penjelasan:
+\begin{enumerate}
+\item Pivot kedua ada di kolom 2 baris 2 (angka 1).
+\item Di bawahnya (baris 3 kolom 2) ada angka 3.
+\item Kita membuat elemen tersebut menjadi 0 dengan mengurangkan 3 kali baris 2.
+\end{enumerate}</p>
+<p>[
+\left[
+\begin{array}{ccccc|c}
+1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \
+0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 2 \
+1 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 3 \
+1 &amp; 0 &amp; 4 &amp; 1 &amp; 0 &amp; 16 \
+1 &amp; 0 &amp; 0 &amp; 5 &amp; 1 &amp; 25
+\end{array}
+\right]
+]</p>
+<p>\subsection*{Langkah 3: nolkan elemen di bawah pivot kolom 3}</p>
+<p>Operasi baris:
+[
+R_4 \leftarrow R_4 - 4R_3
+]</p>
+<p>Penjelasan:
+\begin{enumerate}
+\item Pivot ketiga ada di kolom 3 baris 3 (angka 1).
+\item Di bawahnya (baris 4 kolom 3) ada angka 4.
+\item Elemen tersebut dinolkan dengan mengurangkan 4 kali baris 3.
+\end{enumerate}</p>
+<p>[
+\left[
+\begin{array}{ccccc|c}
+1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \
+0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 2 \
+1 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 3 \
+1 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 4 \
+1 &amp; 0 &amp; 0 &amp; 5 &amp; 1 &amp; 25
+\end{array}
+\right]
+]</p>
+<p>\subsection*{Langkah 4: nolkan elemen di bawah pivot kolom 4}</p>
+<p>Operasi baris:
+[
+R_5 \leftarrow R_5 - 5R_4
+]</p>
+<p>Penjelasan:
+\begin{enumerate}
+\item Pivot keempat ada di kolom 4 baris 4 (angka 1).
+\item Di bawahnya (baris 5 kolom 4) ada angka 5.
+\item Elemen tersebut dibuat nol dengan mengurangkan 5 kali baris 4.
+\end{enumerate}</p>
+<p>[
+\left[
+\begin{array}{ccccc|c}
+1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \
+0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 2 \
+1 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 3 \
+1 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 4 \
+1 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 5
+\end{array}
+\right]
+]</p>
+<p>\section*{Hasil Akhir}</p>
+<p>[
+x_1 = 1,\quad x_2 = 2,\quad x_3 = 3,\quad x_4 = 4,\quad x_5 = 5
+]</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -416,24 +532,6 @@ document.write(`
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="Materi-3.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Materi Pertemuan 3</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="TugasAwal.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Tugas Awal</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div>
                 </footer>
               
