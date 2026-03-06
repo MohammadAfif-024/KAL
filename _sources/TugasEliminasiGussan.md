@@ -1,6 +1,6 @@
 # Tugas ELiminasi Gaussan
 
-## 1. SPL (Sistem Persamaan Linear) {#spl-sistem-persamaan-linear .unnumbered}
+## 1. SPL (Sistem Persamaan Linear) 
 
 $$\begin{cases}
 1x_1 + 0x_2 + 0x_3 + 0x_4 + 0x_5 = 1 \\
@@ -10,7 +10,7 @@ $$\begin{cases}
 0x_1 + 0x_2 + 0x_3 + 5x_4 + 1x_5 = 25
 \end{cases}$$
 
-## 2. Matriks Augmented {#matriks-augmented .unnumbered}
+## 2. Matriks Augmented 
 
 $$\left[
 \begin{array}{ccccc|c}
@@ -22,9 +22,9 @@ $$\left[
 \end{array}
 \right]$$
 
-## 3. Eliminasi Gauss (OBE) {#eliminasi-gauss-obe .unnumbered}
+## 3. Eliminasi Gauss (OBE) 
 
-### Langkah 1: nolkan elemen di bawah pivot kolom 1 {#langkah-1-nolkan-elemen-di-bawah-pivot-kolom-1 .unnumbered}
+### Langkah 1: nolkan elemen di bawah pivot kolom 1 
 
 Operasi baris: $$R_2 \leftarrow R_2 - 2R_1$$
 
@@ -48,7 +48,7 @@ $$\left[
 \end{array}
 \right]$$
 
-### Langkah 2: nolkan elemen di bawah pivot kolom 2 {#langkah-2-nolkan-elemen-di-bawah-pivot-kolom-2 .unnumbered}
+### Langkah 2: nolkan elemen di bawah pivot kolom 2 
 
 Operasi baris: $$R_3 \leftarrow R_3 - 3R_2$$
 
@@ -71,7 +71,7 @@ $$\left[
 \end{array}
 \right]$$
 
-### Langkah 3: nolkan elemen di bawah pivot kolom 3 {#langkah-3-nolkan-elemen-di-bawah-pivot-kolom-3 .unnumbered}
+### Langkah 3: nolkan elemen di bawah pivot kolom 3 
 
 Operasi baris: $$R_4 \leftarrow R_4 - 4R_3$$
 
@@ -93,7 +93,7 @@ $$\left[
 \end{array}
 \right]$$
 
-### Langkah 4: nolkan elemen di bawah pivot kolom 4 {#langkah-4-nolkan-elemen-di-bawah-pivot-kolom-4 .unnumbered}
+### Langkah 4: nolkan elemen di bawah pivot kolom 4 
 
 Operasi baris: $$R_5 \leftarrow R_5 - 5R_4$$
 
@@ -115,6 +115,13 @@ $$\left[
 \end{array}
 \right]$$
 
-### Hasil Akhir {#hasil-akhir .unnumbered}
+## Hasil Akhir 
 
 $$x_1 = 1,\quad x_2 = 2,\quad x_3 = 3,\quad x_4 = 4,\quad x_5 = 5$$
+
+
+## SAGE CELL
+
+![original image](https://cdn.mathpix.com/snip/images/aeU_3-oDook_mnKKIv2FYWNZY-_fwbTFVqVEcXw9jo4.original.fullsize.png)
+
+Kesimpulan: Eliminasi Gauss adalah metode efisien untuk menyelesaikan sistem persamaan linear (SPL) dengan mengubah matriks diperbesar menjadi bentuk eselon baris (segitiga atas) menggunakan operasi baris elementer. Proses ini diakhiri dengan substitusi balik untuk mendapatkan solusi, menjadikannya metode sistematis yang ampuh. 
