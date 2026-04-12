@@ -106,14 +106,14 @@ Penjelasan:
 3.  Elemen tersebut dibuat nol dengan mengurangkan 5 kali baris 4.
 
 $$\left[
-\begin{array}{ccccc|c}
-1 & 0 & 0 & 0 & 0 & 1 \\
-0 & 1 & 0 & 0 & 0 & 2 \\
-1 & 0 & 1 & 0 & 0 & 3 \\
-1 & 0 & 0 & 1 & 0 & 4 \\
-1 & 0 & 0 & 0 & 1 & 5
-\end{array}
-\right]$$
+    \begin{array}{ccccc|c}
+    1 & 0 & 0 & 0 & 0 & 1 \\
+    0 & 1 & 0 & 0 & 0 & 2 \\
+    1 & 0 & 1 & 0 & 0 & 3 \\
+    1 & 0 & 0 & 1 & 0 & 4 \\
+    1 & 0 & 0 & 0 & 1 & 5
+    \end{array}
+    \right]$$$$
 
 ## Hasil Akhir 
 
