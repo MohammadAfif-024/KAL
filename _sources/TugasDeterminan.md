@@ -1,4 +1,6 @@
-# 1\. Matriks A
+# TUGAS UTS
+
+## 1\. Matriks A
 
 $$
 A =
@@ -11,7 +13,7 @@ u & v & w & x & y
 \end{bmatrix}
 $$
 
-# 2\. Determinan Matriks 5×5
+## 2\. Determinan Matriks 5×5
 
 Menggunakan ekspansi kofaktor pada baris pertama:
 
@@ -25,7 +27,7 @@ $$
 C_{ij} = (-1)^{i+j} \, M_{ij}
 $$
 
-# 3\. Matriks Adjoin (adj A)
+## 3\. Matriks Adjoin (adj A)
 
 adj(A) = transpose dari matriks kofaktor
 
@@ -98,13 +100,17 @@ Karena matriks merupakan matriks segitiga bawah, maka determinannya adalah hasil
 Gabungkan matriks A dengan matriks identitas:
 
 
-\begin{bmatrix}
+
+$\Rightarrow
+\left[
+\begin{array}{ccccc|ccccc}
 1 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\
-2 & 1 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 & 0 & -2 & 1 & 0 & 0 & 0 \\
 0 & 3 & 1 & 0 & 0 & 0 & 0 & 1 & 0 & 0 \\
 0 & 0 & 4 & 1 & 0 & 0 & 0 & 0 & 1 & 0 \\
 0 & 0 & 0 & 5 & 1 & 0 & 0 & 0 & 0 & 1
-\end{bmatrix}
+\end{array}
+\right]$
 
 #### Langkah 1: Hilangkan elemen di bawah pivot kolom 1
 
@@ -112,13 +118,13 @@ $
 R_2 \leftarrow R_2 - 2R_1
 $
 
-\begin{bmatrix}
+$\begin{bmatrix}
 1 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\
 0 & 1 & 0 & 0 & 0 & -2 & 1 & 0 & 0 & 0 \\
 0 & 3 & 1 & 0 & 0 & 0 & 0 & 1 & 0 & 0 \\
 0 & 0 & 4 & 1 & 0 & 0 & 0 & 0 & 1 & 0 \\
 0 & 0 & 0 & 5 & 1 & 0 & 0 & 0 & 0 & 1
-\end{bmatrix}
+\end{bmatrix}$
 
 #### Langkah 2: Hilangkan elemen di bawah pivot kolom 2
 
@@ -126,13 +132,16 @@ $
 R_3 \leftarrow R_3 - 3R_2
 $
 
-\begin{bmatrix}
+$\Rightarrow
+\left[
+\begin{array}{ccccc|ccccc}
 1 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\
 0 & 1 & 0 & 0 & 0 & -2 & 1 & 0 & 0 & 0 \\
 0 & 0 & 1 & 0 & 0 & 6 & -3 & 1 & 0 & 0 \\
 0 & 0 & 4 & 1 & 0 & 0 & 0 & 0 & 1 & 0 \\
 0 & 0 & 0 & 5 & 1 & 0 & 0 & 0 & 0 & 1
-\end{bmatrix}
+\end{array}
+\right]$
 
 #### Langkah 3: Hilangkan elemen di bawah pivot kolom 3
 
@@ -141,13 +150,17 @@ R_4 \leftarrow R_4 - 4R_3
 $
 
 
-\begin{bmatrix}
+$\Rightarrow
+\left[
+\begin{array}{ccccc|ccccc}
 1 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\
 0 & 1 & 0 & 0 & 0 & -2 & 1 & 0 & 0 & 0 \\
 0 & 0 & 1 & 0 & 0 & 6 & -3 & 1 & 0 & 0 \\
 0 & 0 & 0 & 1 & 0 & -24 & 12 & -4 & 1 & 0 \\
 0 & 0 & 0 & 5 & 1 & 0 & 0 & 0 & 0 & 1
-\end{bmatrix}
+\end{array}
+\right]$
+
 
 
 #### Langkah 4: Hilangkan elemen di bawah pivot kolom 4
@@ -156,14 +169,16 @@ $
 R_5 \leftarrow R_5 - 5R_4
 $
 
-
-\begin{bmatrix}
+$\Rightarrow
+\left[
+\begin{array}{ccccc|ccccc}
 1 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\
 0 & 1 & 0 & 0 & 0 & -2 & 1 & 0 & 0 & 0 \\
 0 & 0 & 1 & 0 & 0 & 6 & -3 & 1 & 0 & 0 \\
 0 & 0 & 0 & 1 & 0 & -24 & 12 & -4 & 1 & 0 \\
 0 & 0 & 0 & 0 & 1 & 120 & -60 & 20 & -5 & 1
-\end{bmatrix}
+\end{array}
+\right]$
 
 
 ### 4. Hasil Invers
