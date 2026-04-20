@@ -239,23 +239,77 @@ $$
 $$
 
 ## 4. Matriks 2×2
-Determinan: 
-$$det(A)=(−7)(4)−(−5)(1)=−28+5=−23$$
+Diketahui Determinan:
+
+$$\det(A) = - 23$$
+
 Minor:
-$$M11​=4,M12​=1,M21​=−5,M22​=−7$$
+
+$$
+M_{11} = \begin{vmatrix} 4 \end{vmatrix} = 4
+$$
+
+$$
+M_{12} = \begin{vmatrix} 1 \end{vmatrix} = 1
+$$
+
+$$
+M_{21} = \begin{vmatrix} -5 \end{vmatrix} = -5
+$$
+
+$$
+M_{22} = \begin{vmatrix} -7 \end{vmatrix} = -7
+$$
+
 Kofaktor:
-$$C14​=(−1)1+4(−16)=(−1)5(−16)=16$$
-Adjoint (transpose kofaktor): $$adj(A)=[4−1​5−7​]$$
-Invers: $$
-A^{-1} = -\frac{1}{23}
+
+$$
+C_{11} = (+)M_{11} = 4
+$$
+
+$$
+C_{12} = (-)M_{12} = -1
+$$
+
+$$
+C_{21} = (-)M_{21} = 5
+$$
+
+$$
+C_{22} = (+)M_{22} = -7
+$$
+
+Adjoin (Transpose kofaktor):
+
+$$
+\operatorname{adj}(A) =
 \begin{bmatrix}
-4 & -1 \\
-5 & -7
+4 & 5 \\
+-1 & -7
 \end{bmatrix}
-=
+$$
+
+Invers:
+
+$$
+A^{-1} = \frac{1}{\det(A)} \operatorname{adj}(A)
+$$
+
+$$
+A^{-1} = \frac{1}{-23}
 \begin{bmatrix}
--\frac{4}{23} & \frac{1}{23} \\
--\frac{5}{23} & \frac{7}{23}
+4 & 5 \\
+-1 & -7
+\end{bmatrix}
+$$
+
+Hasil Akhir:
+
+$$
+A^{-1} =
+\begin{bmatrix}
+-\frac{4}{23} & -\frac{5}{23} \\
+\frac{1}{23} & \frac{7}{23}
 \end{bmatrix}
 $$
 
