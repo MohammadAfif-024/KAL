@@ -239,9 +239,12 @@ $$
 $$
 
 ## 4. Matriks 2×2
-Determinan: $$det(A)=(−7)(4)−(−5)(1)=−28+5=−23$$
-Minor: $$M11​=4,M12​=1,M21​=−5,M22​=−7$$
-Kofaktor: $$Kofaktor$$
+Determinan: 
+$$det(A)=(−7)(4)−(−5)(1)=−28+5=−23$$
+Minor:
+$$M11​=4,M12​=1,M21​=−5,M22​=−7$$
+Kofaktor:
+$$C14​=(−1)1+4(−16)=(−1)5(−16)=16$$
 Adjoint (transpose kofaktor): $$adj(A)=[4−1​5−7​]$$
 Invers: $$
 A^{-1} = -\frac{1}{23}
