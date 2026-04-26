@@ -1,244 +1,131 @@
-# Tugas Evaluasi Determinan Dan Invers
+# Evaluasi Determinan Dan Invers
+
+SOAL.
+
+**A. Hitunglah determinan matrik berikut dengan menggunakan rumus expansi baris**
+
+$$\sum_{k=1}^n (-1)^{i+k} a_{ik} M_{ik}$$
+
+dengan $M_{ij}$ adalah minior dari matrik A dan
+
+$$M_{ij} = \det A_{ij}.$$
+
+$A_{ij}$ adalah submatrik dengan menghapus baris i dan kolom kolom j dari matrix $A_{mxn}$ dengan $1 \le i, j \le n$
 
 
-## 1. Matriks 2×2
-$$
-A =
-\begin{bmatrix}
--7 & 1 \\
--5 & 4
-\end{bmatrix}$$
+---
 
-Ekspansi baris pertama (i = 1):  
-$$det(A)=a11​C11​+a12​C12​$$
+## 1. Matriks 2×2 (Determinan)
 
-Minor:
+$$ A = \begin{bmatrix} -7 & -5 \\ 1 & 4 \end{bmatrix} $$
 
-$$
-M_{11} = 4, \quad M_{12} = 1
-$$
+Ekspansi baris pertama:
 
-
-Kofaktor:
 $$
 \det(A) = a_{11}C_{11} + a_{12}C_{12}
 $$
 
-Determinannya:
-$$det(A)=(−7)(4)+(−5)(−1)=−28+5=−23​$$
-
-## 2. Matriks 3×3
-$$
-A =
-\begin{bmatrix}
-0 & 1 & 0 \\
-2 & -2 & 0 \\
--3 & -1 & 1
-\end{bmatrix}$$
-
-Ekspansi baris pertama: 
-$$\
-det(A) = a_{11}C_{11} + a_{12}C_{12} + a_{13}C_{13}
-$$
-
-### a. Elemen a11 =0
-Minor: $$
-M_{11} =
-\begin{vmatrix}
--2 & 0 \\
--1 & 1
-\end{vmatrix}
-= (-2)(1) - (-1)(0) = -2
-$$
-
-Kofaktor:
-$$
-C_{13} = (+) M_{13} = 0
-$$
-Kontribusi: $$0⋅(−2)=0$$
-
-### b. Elemen a12=2
 Minor:
-$$M_{12} =
-\begin{vmatrix}
-1 & 0 \\
--1 & 1
-\end{vmatrix}
-= (1)(1) - (-1)(0) = 1
-$$
-Kofaktor:
-$$C12​=(−)(1)=−1$$
-Kontribusi:
-$$2⋅(−1)=−2$$
 
-### c. Elemen a13=−3
-Minor:
 $$
-M_{13} =
-\begin{vmatrix}
-1 & 0 \\
--2 & 0
-\end{vmatrix}
-= (1)(0) - (-2)(0) = 0
+M_{11} = 4, \quad M_{12} = 
 $$
-Kofaktor:
-$$C13​=(+)(0)=0$$
-Kontribusi:
-$$−3⋅0=0$$
 
-### Hasil =
-$$det(A)=0−2+0=0​$$
+Determinan:
 
-## 3. Matriks 4×4
 $$
-A =
-\begin{bmatrix}
-1 & -3 & 1 & 1 \\
--3 & 1 & 1 & 1 \\
-1 & 1 & -3 & 1 \\
-1 & 1 & 1 & -3
-\end{bmatrix}
+\det(A) = (-7)(4) + (1)(5) = -28 + 5 = -23
 $$
+
+---
+
+## 2. Matriks 3×3 (Determinan)
+
+$$ A = \begin{bmatrix} 0 & 1 & 0 \\ 2 & -2 & 0 \\ -3 & -1 & 1 \end{bmatrix} $$
+
 Ekspansi baris pertama:
-$$det(A)=a11​C11​+a12​C12​+a13​C13​+a14​C14​$$
 
-### a. Elemen a11 = 1
+$$
+\det(A) = a_{11}C_{11} + a_{12}C_{12} + a_{13}C_{13}
+$$
+
 Minor:
+
 $$
 M_{11} =
 \begin{vmatrix}
-1 & 1 & 1 \\
-1 & -3 & 1 \\
-1 & 1 & -3
+-2 & 0 \
+-1 & 1
 \end{vmatrix}
-= 1
-\begin{vmatrix}
--3 & 1 \\
-1 & -3
-\end{vmatrix}
-- 1
-\begin{vmatrix}
-1 & 1 \\
-1 & -3
-\end{vmatrix}
-+ 1
-\begin{vmatrix}
-1 & -3 \\
-1 & 1
-\end{vmatrix}
+= -2
 $$
 
-Hitung (Sarrus):
-$$=1((−3)(−3)−1⋅1)−1(1(−3)−1⋅1)+1(1⋅1−(−3)⋅1)
-=1(9−1)−1(−3−1)+1(1+3)
-=8+4+4=16$$
-Kofaktor: $$C11​=+16$$
-Kontribusi: $$1⋅16=16$$
-
-### b. Elemen a12= -3
-Minor: $$
+$$
 M_{12} =
 \begin{vmatrix}
--3 & 1 & 1 \\
-1 & -3 & 1 \\
-1 & 1 & -3
+2 & 0 \
+-3 & 1
 \end{vmatrix}
-= -3
-\begin{vmatrix}
--3 & 1 \\
-1 & -3
-\end{vmatrix}
-- 1
-\begin{vmatrix}
-1 & 1 \\
-1 & -3
-\end{vmatrix}
-+ 1
-\begin{vmatrix}
-1 & -3 \\
-1 & 1
-\end{vmatrix}
+= 2
 $$
-Hitung (Sarrus):
-$$=(−3)((−3)(−3)−(1)(1))−1((1)(−3)−(1)(1))+1((1)(1)−(−3)(1)) =−24+4+4=−16$$
-Kofaktor:
-$$C14​=(−)(16)=−16$$
-Kontribusi:
-$$1⋅(−16)=−16$$
 
-### c. Elemen a13= 1
-Minor:
 $$
 M_{13} =
 \begin{vmatrix}
--3 & 1 & 1 \\
-1 & 1 & 1 \\
-1 & 1 & -3
+2 & -2 \
+-3 & -1
 \end{vmatrix}
-= -3
-\begin{vmatrix}
-1 & 1 \\
-1 & -3
-\end{vmatrix}
-- 1
-\begin{vmatrix}
-1 & 1 \\
-1 & -3
-\end{vmatrix}
-+ 1
-\begin{vmatrix}
-1 & 1 \\
-1 & 1
-\end{vmatrix}
-$$
-Hitung (Sarrus):
-$$=(−3)(1(−3)−1⋅1)−1(1(−3)−1⋅1)+1(1⋅1−1⋅1) =12+4+0=16 $$
-Kofaktor:
-$$C13​=(+)16$$
-Kontribusi:
-$$1⋅16=16$$
-
-### d. Elemen a14= 1
-Minor: $$
-M_{14} =
-\begin{vmatrix}
--3 & 1 & 1 \\
-1 & 1 & -3 \\
-1 & 1 & 1
-\end{vmatrix}
-= -3
-\begin{vmatrix}
-1 & -3 \\
-1 & 1
-\end{vmatrix}
-- 1
-\begin{vmatrix}
-1 & -3 \\
-1 & 1
-\end{vmatrix}
-+ 1
-\begin{vmatrix}
-1 & 1 \\
-1 & 1
-\end{vmatrix}
-$$
-Hitung (Sarrus):
-$$=(−3)(1⋅1−(−3)⋅1)−1(1⋅1−(−3)⋅1)+1(1⋅1−1⋅1)=−12−4+0=−16$$
-Kofaktor:
-$$C14​=(−1)1+4(−16)=(−1)5(−16)=16$$
-Kontribusi:
-$$1⋅16=16$$
-
-## Rumus utama
-$$
-A^{-1} = \frac{1}{\det(A)} \, \text{adj}(A)
+= -2 - 6 = -8
 $$
 
+Determinan:
+
 $$
-(\text{adj}\, A)_{ij} = (-1)^{i+j} \, M_{ji}
+\det(A) = 0(-2) + 1(-2) + 0(-8) = -2
 $$
 
-## 4. Matriks 2×2
+---
+
+## 3. Matriks 4×4 (Determinan)
+
+$$ A = \begin{bmatrix} 1 & -3 & 1 & 1 \\ -3 & 1 & 1 & 1 \\ 1 & 1 & -3 & 1 \\ 1 & 1 & 1 & -3 \end{bmatrix} $$
+
+Ekspansi baris pertama:
+
+$$
+\det(A) = a_{11}C_{11} + a_{12}C_{12} + a_{13}C_{13} + a_{14}C_{14}
+$$
+
+Minor:
+
+$$
+M_{11} = 16, \quad M_{12} = -16, \quad M_{13} = 16, \quad M_{14} = -16
+$$
+
+Determinan:
+
+$$
+\det(A) = 1(16) + (-3)(16) + 1(16) + 1(16)
+= 16 - 48 + 16 + 16 = 0
+$$
+
+---
+
+**B. Gunakan rumus matriks adjoin untuk menghitung invers dari matriks berikut dengan rumus**
+
+$$(\operatorname{adj} A)_{ij} = (-1)^{i+j} M_{ji}$$
+
+dan
+
+$$A^{-1} = \frac{1}{\det A} \operatorname{adj} A.$$
+
+---
+
+
+## 4. Matriks 2×2 (Invers)
+
+$$A = \begin{bmatrix} -7 & -5 \\ 1 & 4 \end{bmatrix}$$
+
 Diketahui Determinan:
 
 $$\det(A) = - 23$$
@@ -313,7 +200,10 @@ A^{-1} =
 \end{bmatrix}
 $$
 
-## 5. Matriks 3×3
+## 5. Matriks 3×3 (Invers)
+
+$$A = \begin{bmatrix} 0 & 2 & -3 \\ 1 & -2 & -1 \\ 0 & 0 & 1 \end{bmatrix}$$
+
 Diketahui Determinan:
 
 $$
@@ -536,25 +426,38 @@ A^{-1} =
 \end{bmatrix}
 $$
 
-## 6. Matriks 4×4
-Determinan: det(A)=−80
-Minor: \[
-A =
-\begin{bmatrix}
-1 & -3 & 1 & 1 \\
--3 & 1 & 1 & 1 \\
-1 & 1 & -3 & 1 \\
-1 & 1 & 1 & -3
-\end{bmatrix}
-\]
-kofaktor: $$\[
-C =
-\begin{bmatrix}
-16 & 16 & 16 & 16 \\
-16 & 16 & 16 & 16 \\
-16 & 16 & 16 & 16 \\
-16 & 16 & 16 & 16
-\end{bmatrix}
-\]$$
-Adjoint (transpose kofaktor): $$adj(A)=CT=C$$
-Invers: Tidak ada
+## 6. Matriks 4×4 (Invers)
+
+$$A = \begin{bmatrix} 1 & -3 & 1 & 1 \\ -3 & 1 & 1 & 1 \\ 1 & 1 & -3 & 1 \\ 1 & 1 & 1 & -3 \end{bmatrix}.$$
+
+Diketahui Determinan:
+
+$$
+\det(A) = 0
+$$
+
+Invers
+
+$$
+A^{-1} = \frac{1}{\det(A)} \operatorname{adj}(A)
+$$
+
+Karena:
+
+$$
+\det(A) = 0
+$$
+
+maka:
+
+$$
+A^{-1} = \frac{1}{0} \operatorname{adj}(A)
+$$
+
+Pembagian dengan nol tidak terdefinisi, sehingga:
+
+$$
+A^{-1} \text{ tidak ada}
+$$
+
+---
