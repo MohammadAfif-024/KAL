@@ -1,5 +1,8 @@
 # Tugas Transformasi sumbu Y menggunakan Translasi dan pencerminan
 
+## Link Colab:
+https://colab.research.google.com/drive/18AoR7KNwbvkdhrXGpNt280jyL446HgYw?usp=sharing
+
 ## 1. Titik Awal
 
 Objek awal berupa persegi dengan titik:
@@ -10,14 +13,14 @@ C(3,3)
 D(1,3)
 
 Dalam bentuk matriks (koordinat homogen):
-
 $$
-P = \begin{bmatrix}
+P =
+\begin{bmatrix}
 x \\
 y \\
 1
 \end{bmatrix}
-$$	​
+$$
 
 ## 2. Translasi (Langkah Pertama)
 
