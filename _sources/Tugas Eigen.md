@@ -16,7 +16,7 @@ $$
 
 ---
 
-# Tahap 1 — Menentukan Matriks Awal
+## Tahap 1 — Menentukan Matriks Awal
 
 Matriks awal:
 
@@ -57,7 +57,7 @@ dengan:
 
 ---
 
-# Tahap 2 — Membentuk Vektor $q_1$
+## Tahap 2 — Membentuk Vektor $q_1$
 
 Norma kolom pertama:
 
@@ -83,7 +83,7 @@ $$
 
 ---
 
-# Tahap 3 — Menghitung Proyeksi $a_2$
+## Tahap 3 — Menghitung Proyeksi $a_2$
 
 Hitung dot product:
 
@@ -115,7 +115,7 @@ $$
 
 ---
 
-# Tahap 4 — Membentuk Vektor Ortogonal $u_2$
+## Tahap 4 — Membentuk Vektor Ortogonal $u_2$
 
 Rumus:
 
@@ -146,7 +146,7 @@ $$
 
 ---
 
-# Tahap 5 — Membentuk Vektor $q_2$
+## Tahap 5 — Membentuk Vektor $q_2$
 
 Norma:
 
@@ -179,7 +179,7 @@ $$
 
 ---
 
-# Tahap 6 — Membentuk Matriks $Q$ dan $R$
+## Tahap 6 — Membentuk Matriks $Q$ dan $R$
 
 Matriks $Q$:
 
@@ -209,7 +209,7 @@ $$
 
 ---
 
-# Tahap 7 — Verifikasi Dekomposisi QR
+## Tahap 7 — Verifikasi Dekomposisi QR
 
 Rumus verifikasi:
 
@@ -231,7 +231,7 @@ Hasil sama dengan matriks awal sehingga dekomposisi QR benar.
 
 ---
 
-# Tahap 8 — Membentuk Matriks Iterasi Baru
+## Tahap 8 — Membentuk Matriks Iterasi Baru
 
 Rumus iterasi QR:
 
@@ -262,7 +262,7 @@ $$
 
 ---
 
-# Tahap 9 — Iterasi QR hingga 10 Kali
+## Tahap 9 — Iterasi QR hingga 10 Kali
 
 Proses QR dilakukan terus menerus:
 
@@ -278,7 +278,7 @@ $$
 
 Hasil iterasi:
 
-## Iterasi 1
+### Iterasi 1
 
 $$
 A_1=
@@ -288,7 +288,7 @@ A_1=
 \end{bmatrix}
 $$
 
-## Iterasi 2
+### Iterasi 2
 
 $$
 A_2=
@@ -298,7 +298,7 @@ A_2=
 \end{bmatrix}
 $$
 
-## Iterasi 3
+### Iterasi 3
 
 $$
 A_3=
@@ -308,7 +308,7 @@ A_3=
 \end{bmatrix}
 $$
 
-## Iterasi 4
+### Iterasi 4
 
 $$
 A_4=
@@ -318,7 +318,7 @@ A_4=
 \end{bmatrix}
 $$
 
-## Iterasi 5
+### Iterasi 5
 
 $$
 A_5=
@@ -328,7 +328,7 @@ A_5=
 \end{bmatrix}
 $$
 
-## Iterasi 6
+### Iterasi 6
 
 $$
 A_6=
@@ -338,7 +338,7 @@ A_6=
 \end{bmatrix}
 $$
 
-## Iterasi 7
+### Iterasi 7
 
 $$
 A_7=
@@ -348,7 +348,7 @@ A_7=
 \end{bmatrix}
 $$
 
-## Iterasi 8
+### Iterasi 8
 
 $$
 A_8=
@@ -358,7 +358,7 @@ A_8=
 \end{bmatrix}
 $$
 
-## Iterasi 9
+### Iterasi 9
 
 $$
 A_9=
@@ -368,7 +368,7 @@ A_9=
 \end{bmatrix}
 $$
 
-## Iterasi 10
+### Iterasi 10
 
 $$
 A_{10}=
@@ -382,7 +382,7 @@ Terlihat bahwa elemen di luar diagonal semakin mendekati nol.
 
 ---
 
-# Tahap 10 — Kesimpulan Nilai Eigen
+## Tahap 10 — Kesimpulan Nilai Eigen
 
 Setelah 10 iterasi, matriks hampir menjadi diagonal:
 
@@ -419,4 +419,4 @@ $$
 
 Metode QR berhasil menemukan nilai eigen melalui proses iterasi yang terus membuat matriks mendekati bentuk diagonal.
 
-BY APIIPP 
+### BY : APIIPP 
