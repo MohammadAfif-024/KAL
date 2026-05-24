@@ -191,7 +191,6 @@
 <li class="toctree-l1"><a class="reference internal" href="Tugas%20Transformasi%20sumbu%20y.html">Tugas Transformasi sumbu Y menggunakan Translasi dan pencerminan</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Tugas%20Eigen.html">Eigen Value dan Eigen Vektor dengan Dekomposi QR</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">📊 Implementasi Singular Value Decomposition (SVD) pada Kompresi Citra</a></li>
-
 </ul>
 
     </div>
@@ -387,7 +386,6 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">📊 Implementasi Singular Value Decomposition (SVD) pada Kompresi Citra</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#link-colab">Link Colab:</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-output-program">Hasil Output Program</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menentukan-matriks-awal-gambar-a">1. Menentukan Matriks Awal Gambar A</a><ul class="nav section-nav flex-column">
@@ -424,10 +422,10 @@ document.write(`
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#membentuk-matriks-sigma">9. Membentuk Matriks Sigma Σ</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penjelasan-sigma">Penjelasan Sigma</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rekonstruksi-gambar">10. Rekonstruksi Gambar</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Penjelasan</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#rekonstruksi-gambar">#10. Rekonstruksi Gambar</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Penjelasan</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penjelasan-nilai-k">11. Penjelasan Nilai k</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Penjelasan</a></li>
 </ul>
@@ -447,9 +445,6 @@ document.write(`
 </ul>
 </li>
 </ul>
-</li>
-</ul>
-
             </nav>
         </div>
     </div>
@@ -882,10 +877,9 @@ maka Vᵀ membaca:</p>
 <li><p>tidak saling bercampur.</p></li>
 </ul>
 </section>
-</section>
 <hr class="docutils" />
-<section class="tex2jax_ignore mathjax_ignore" id="rekonstruksi-gambar">
-<h1>#10. Rekonstruksi Gambar<a class="headerlink" href="#rekonstruksi-gambar" title="Link to this heading">#</a></h1>
+<section id="rekonstruksi-gambar">
+<h2>10. Rekonstruksi Gambar<a class="headerlink" href="#rekonstruksi-gambar" title="Link to this heading">#</a></h2>
 <p>Pada program:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">gambar_rekonstruksi</span> <span class="o">=</span> <span class="n">U_k</span> <span class="o">@</span> <span class="n">S_k</span> <span class="o">@</span> <span class="n">Vt_k</span>
 </pre></div>
@@ -895,7 +889,7 @@ maka Vᵀ membaca:</p>
 </pre></div>
 </div>
 <section id="id3">
-<h2>Penjelasan<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<h3>Penjelasan<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
 <p>Rekonstruksi berarti:</p>
 <ul class="simple">
 <li><p>membangun kembali gambar dari hasil SVD.</p></li>
@@ -910,6 +904,7 @@ maka Vᵀ membaca:</p>
 <li><p>ukuran data menjadi lebih kecil,</p></li>
 <li><p>gambar masih terlihat mirip.</p></li>
 </ul>
+</section>
 </section>
 <hr class="docutils" />
 <section id="penjelasan-nilai-k">
@@ -1120,7 +1115,6 @@ maka Vᵀ membaca:</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">📊 Implementasi Singular Value Decomposition (SVD) pada Kompresi Citra</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#link-colab">Link Colab:</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-output-program">Hasil Output Program</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menentukan-matriks-awal-gambar-a">1. Menentukan Matriks Awal Gambar A</a><ul class="nav section-nav flex-column">
@@ -1157,10 +1151,10 @@ maka Vᵀ membaca:</p>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#membentuk-matriks-sigma">9. Membentuk Matriks Sigma Σ</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penjelasan-sigma">Penjelasan Sigma</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rekonstruksi-gambar">10. Rekonstruksi Gambar</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Penjelasan</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#rekonstruksi-gambar">#10. Rekonstruksi Gambar</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Penjelasan</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penjelasan-nilai-k">11. Penjelasan Nilai k</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Penjelasan</a></li>
 </ul>
@@ -1180,9 +1174,6 @@ maka Vᵀ membaca:</p>
 </ul>
 </li>
 </ul>
-</li>
-</ul>
-
   </nav></div>
 
 </div></div>

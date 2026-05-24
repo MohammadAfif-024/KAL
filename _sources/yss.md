@@ -486,7 +486,7 @@ Karena hanya diagonal yang berisi angka:
 
 ---
 
-# #10. Rekonstruksi Gambar
+## 10. Rekonstruksi Gambar
 
 Pada program:
 
