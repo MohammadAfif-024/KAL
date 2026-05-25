@@ -3,6 +3,8 @@
 ## Link Colab:
 https://colab.research.google.com/drive/1RICe-24kMxYnnR16qF4ozasohXupEKN1?usp=sharing
 
+---
+
 ## Hasil Output Program
 
 Pada program:
@@ -117,7 +119,7 @@ Setiap angka menunjukkan tingkat terang suatu piksel.
 
 ---
 
-### 2. Tujuan Dilakukan SVD
+## 2. Tujuan Dilakukan SVD
 
 Metode SVD memecah matriks gambar:
 
@@ -188,7 +190,7 @@ hasil:
 AAᵀ = (168 × 168)
 ```
 
-## Mengapa Harus Menghitung AAᵀ?
+### Mengapa Harus Menghitung AAᵀ?
 
 Karena:
 
@@ -213,14 +215,19 @@ Setelah mendapatkan AAᵀ, langkah berikutnya adalah mencari:
 Secara matematis:
 
 ```math
-(AA^T - \lambda I)x = 0
+(AA^T)x = \lambda x
 ```
 
 dengan:
 
 - λ = eigenvalue
 - x = eigenvector
-- I = matriks identitas
+
+Untuk mencari eigenvalue digunakan persamaan karakteristik:
+
+```math
+\det(AA^T - \lambda I)=0
+```
 
 Pada Python:
 
@@ -240,9 +247,9 @@ Nilai besar:
 
 Nilai kecil:
 
-- fitur kurang penting/noise.
+- fitur kurang penting atau noise.
 
-## Penjelasan Eigenvector
+### Penjelasan Eigenvector
 
 Eigenvector menunjukkan:
 
@@ -295,7 +302,7 @@ Nilai singular terbesar:
 
 Nilai singular kecil:
 
-- biasanya hanya detail kecil/noise.
+- biasanya hanya detail kecil atau noise.
 
 Karena itu:
 
@@ -399,7 +406,27 @@ kemudian ditranspose menjadi:
 V^T
 ```
 
-Sehingga:
+Pada full SVD sebenarnya ukuran:
+
+```text
+Vᵀ = (300 × 300)
+```
+
+Namun karena program menggunakan:
+
+```python
+full_matrices=False
+```
+
+maka NumPy menggunakan thin SVD sehingga hanya singular vector penting yang disimpan.
+
+Karena:
+
+```math
+\min(168,300)=168
+```
+
+maka ukuran akhirnya menjadi:
 
 ```text
 Vᵀ = (168 × 300)
@@ -418,25 +445,7 @@ maka Vᵀ membaca:
 - struktur horizontal,
 - kombinasi fitur antar kolom piksel.
 
-Karena menggunakan:
-
-```python
-full_matrices=False
-```
-
-maka NumPy menggunakan thin SVD sehingga ukuran Vᵀ menjadi:
-
-```text
-(168 × 300)
-```
-
-bukan:
-
-```text
-(300 × 300)
-```
-
-Tujuannya agar:
+Tujuan thin SVD:
 
 - komputasi lebih cepat,
 - memori lebih hemat,
@@ -469,7 +478,15 @@ Menjadi:
 \end{bmatrix}
 ```
 
-## Penjelasan Sigma
+*(contoh sederhana matriks diagonal)*
+
+Ukuran sebenarnya:
+
+```text
+Σ = (168 × 168)
+```
+
+### Penjelasan Sigma
 
 Sigma menunjukkan:
 
@@ -488,16 +505,22 @@ Karena hanya diagonal yang berisi angka:
 
 ## 10. Rekonstruksi Gambar
 
+Pada dekomposisi penuh:
+
+```math
+A = U\Sigma V^T
+```
+
+Sedangkan pada proses kompresi digunakan:
+
+```math
+A_k = U_k\Sigma_kV_k^T
+```
+
 Pada program:
 
 ```python
 gambar_rekonstruksi = U_k @ S_k @ Vt_k
-```
-
-Secara matematis:
-
-```math
-A_k = U_k\Sigma_kV_k^T
 ```
 
 ### Penjelasan
@@ -514,7 +537,7 @@ Tetapi:
 Karena itu:
 
 - ukuran data menjadi lebih kecil,
-- gambar masih terlihat mirip.
+- gambar masih terlihat mirip dengan gambar asli.
 
 ---
 
@@ -576,7 +599,7 @@ Komponen akhir:
 ## 13. Alur Lengkap Proses SVD pada Program
 
 ### STEP 1
-Baca gambar grayscale
+Baca gambar grayscale:
 
 ```text
 A (168 × 300)
@@ -624,7 +647,7 @@ untuk mencari pola horizontal.
 ↓
 
 ### STEP 6
-Cari eigenvector
+Cari eigenvector.
 
 ↓
 
@@ -659,7 +682,35 @@ Bentuk:
 Rekonstruksi:
 
 ```math
-A = U\Sigma V^T
+A_k = U_k\Sigma_kV_k^T
 ```
 
 untuk menghasilkan kembali gambar hasil kompresi.
+
+---
+
+## Kesimpulan
+
+Metode Singular Value Decomposition (SVD) dapat digunakan untuk melakukan kompresi citra dengan cara memecah gambar menjadi tiga komponen utama:
+
+- matriks U,
+- matriks Σ,
+- matriks Vᵀ.
+
+Melalui proses ini, sistem dapat menyimpan hanya komponen paling penting dari gambar sehingga ukuran data menjadi lebih kecil tanpa menghilangkan bentuk utama citra secara signifikan.
+
+Semakin besar nilai \(k\) yang digunakan:
+
+- kualitas gambar semakin baik,
+- tetapi ukuran penyimpanan juga semakin besar.
+
+Sebaliknya, semakin kecil nilai \(k\):
+
+- kompresi semakin tinggi,
+- namun detail gambar semakin berkurang.
+
+Dengan demikian, SVD menjadi salah satu metode efektif dalam pengolahan citra digital untuk:
+
+- kompresi gambar,
+- reduksi dimensi,
+- dan ekstraksi fitur penting dari citra.
