@@ -1,4 +1,4 @@
-#  Eigen Value dan Eigen Vektor dengan Dekomposi QR
+#  Eigen Value dan Eigen Vektor dengan Dekomposi QR (7)
 
 ## Link Gogle Colab: https://colab.research.google.com/drive/1Nb7MoC5RzdQFF833btc5nUpd7BSr5LY8?usp=sharing
 

@@ -1,4 +1,4 @@
-# TUGAS UTS
+# TUGAS UTS Determinan (4)
 
 ## 1\. Matriks A
 

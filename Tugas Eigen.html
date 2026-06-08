@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Eigen Value dan Eigen Vektor dengan Dekomposi QR &#8212; Catatan KAL Saya</title>
+    <title>Eigen Value dan Eigen Vektor dengan Dekomposi QR (7) &#8212; Catatan KAL Saya</title>
   
   
   
@@ -62,7 +62,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'Tugas Eigen';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Tugas Transformasi sumbu Y menggunakan Translasi dan pencerminan" href="Tugas%20Transformasi%20sumbu%20y.html" />
+    <link rel="next" title="📊 Implementasi Singular Value Decomposition (SVD) pada Kompresi Citra (8)" href="yss.html" />
+    <link rel="prev" title="Tugas Transformasi sumbu Y menggunakan Translasi dan pencerminan (7)" href="Tugas%20Transformasi%20sumbu%20y.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -181,17 +182,15 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="Materi-1.html">Materi Pertemuan 1</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Materi-2.html">Materi pertemuan 2</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Materi-3.html">Materi Pertemuan 3</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Materi-4.html">Materi Pertemuan 4</a></li>
-<li class="toctree-l1"><a class="reference internal" href="TugasAwal.html">Tugas Awal</a></li>
-<li class="toctree-l1"><a class="reference internal" href="TugasEliminasiGussan.html">Tugas ELiminasi Gaussan</a></li>
-<li class="toctree-l1"><a class="reference internal" href="TugasDeterminan.html">TUGAS UTS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Soal%20EVALUASI.html">SOAL Evaluasi Determinan :</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Tugas%20Eval.html">Evaluasi Determinan Dan Invers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Tugas%20Transformasi%20sumbu%20y.html">Tugas Transformasi sumbu Y menggunakan Translasi dan pencerminan</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Eigen Value dan Eigen Vektor dengan Dekomposi QR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Materi-1.html">Materi Pertemuan 1 (1)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="TugasAwal.html">Tugas Awal (2)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="TugasEliminasiGussan.html">Tugas ELiminasi  (3)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="TugasDeterminan.html">TUGAS UTS Determinan (4)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Soal%20EVALUASI.html">SOAL Evaluasi Determinan (5)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Tugas%20Eval.html">Evaluasi Determinan Dan Invers (6)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Tugas%20Transformasi%20sumbu%20y.html">Tugas Transformasi sumbu Y menggunakan Translasi dan pencerminan (7)</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Eigen Value dan Eigen Vektor dengan Dekomposi QR (7)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="yss.html">📊 Implementasi Singular Value Decomposition (SVD) pada Kompresi Citra (8)</a></li>
 </ul>
 
     </div>
@@ -377,7 +376,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Eigen Value dan Eigen Vektor dengan Dekomposi QR</h1>
+    <h1>Eigen Value dan Eigen Vektor dengan Dekomposi QR (7)</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -424,8 +423,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="eigen-value-dan-eigen-vektor-dengan-dekomposi-qr">
-<h1>Eigen Value dan Eigen Vektor dengan Dekomposi QR<a class="headerlink" href="#eigen-value-dan-eigen-vektor-dengan-dekomposi-qr" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="eigen-value-dan-eigen-vektor-dengan-dekomposi-qr-7">
+<h1>Eigen Value dan Eigen Vektor dengan Dekomposi QR (7)<a class="headerlink" href="#eigen-value-dan-eigen-vektor-dengan-dekomposi-qr-7" title="Link to this heading">#</a></h1>
 <section id="link-gogle-colab-https-colab-research-google-com-drive-1nb7moc5rzdqff833btc5nupd7bsr5ly8-usp-sharing">
 <h2>Link Gogle Colab: <a class="reference external" href="https://colab.research.google.com/drive/1Nb7MoC5RzdQFF833btc5nUpd7BSr5LY8?usp=sharing">https://colab.research.google.com/drive/1Nb7MoC5RzdQFF833btc5nUpd7BSr5LY8?usp=sharing</a><a class="headerlink" href="#link-gogle-colab-https-colab-research-google-com-drive-1nb7moc5rzdqff833btc5nupd7bsr5ly8-usp-sharing" title="Link to this heading">#</a></h2>
 <p>Materi ini membahas proses mencari nilai eigen menggunakan metode dekomposisi QR dengan Gram-Schmidt secara bertahap hingga 10 iterasi QR.</p>
@@ -863,8 +862,17 @@ A_{10}\approx
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Tugas Transformasi sumbu Y menggunakan Translasi dan pencerminan</p>
+        <p class="prev-next-title">Tugas Transformasi sumbu Y menggunakan Translasi dan pencerminan (7)</p>
       </div>
+    </a>
+    <a class="right-next"
+       href="yss.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">📊 Implementasi Singular Value Decomposition (SVD) pada Kompresi Citra (8)</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>

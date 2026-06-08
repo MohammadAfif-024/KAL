@@ -1,4 +1,4 @@
-# Tugas Transformasi sumbu Y menggunakan Translasi dan pencerminan
+# Tugas Transformasi sumbu Y menggunakan Translasi dan pencerminan (7)
 
 ## Link Colab:
 https://colab.research.google.com/drive/18AoR7KNwbvkdhrXGpNt280jyL446HgYw?usp=sharing

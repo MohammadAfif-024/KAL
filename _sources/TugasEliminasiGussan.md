@@ -1,4 +1,4 @@
-# Tugas ELiminasi Gaussan
+# Tugas ELiminasi  (3)
 
 ## 1. SPL (Sistem Persamaan Linear) 
 
